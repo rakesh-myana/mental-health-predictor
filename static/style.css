@@ -8,11 +8,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
 }
 
 /* Form container */
 form {
+    margin-top: 2%;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -25,7 +25,7 @@ form {
 h1 {
     text-align: center;
     color: #333333;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 /* Labels and inputs in a row */
@@ -60,8 +60,10 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    width: 100%;
+    width: 50%;
     margin-top: 10px;
+    margin-left: 25%; 
+    transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
