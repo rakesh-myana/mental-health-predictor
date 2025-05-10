@@ -1,0 +1,84 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form container */
+form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    width: 400px;
+    text-align: left;
+}
+
+/* Form heading */
+h1 {
+    text-align: center;
+    color: #333333;
+    margin-top: 20px;
+}
+
+/* Labels and inputs in a row */
+.label-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Reduced spacing between rows */
+}
+
+label {
+    font-size: 14px;
+    color: #333333;
+    margin-right: 10px; /* Space between label and input */
+    flex: 1; /* Allow label to take up space */
+}
+
+input[type="number"], select {
+    flex: 2; /* Allow input to take up more space */
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Prediction result */
+h2 {
+    text-align: center;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+}

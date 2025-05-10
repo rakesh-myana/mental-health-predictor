@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Prediction</title>
+    <link rel="stylesheet" href="../static/style.css">
+    
+</head>
+<body>
+
+    <h1>Mental Health Prediction Form</h1>
+
+    <form action="/predict" method="post">
+        <label>Are you a:</label>
+        <select name="role">
+            <option value="Student">Student</option>
+            <option value="Working Professional">Working Professional</option>
+        </select><br><br>
+
+        <label>Dietary Habits:</label>
+        <select name="diet">
+            <option value="Healthy">Healthy</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Unhealthy">Unhealthy</option>
+        </select><br><br>
+
+        <label>Have you ever had suicidal thoughts?</label>
+        <select name="suicidal">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+        </select><br><br>
+
+        <label>Age (18-60):</label>
+        <input type="number" name="age" min="18" max="60" required="required"><br><br>
+
+        <label>Work/Study Hours per  (0-12):</label>
+        <input type="number" name="hours" min="0" max="12" required="required"><br><br>
+
+        <label>Financial Stress (1–5):</label>
+        <input type="number" name="finance" min="1" max="5" required="required"><br><br>
+
+        <label>Pressure (1–5):</label>
+        <input type="number" name="pressure" min="1" max="5" required="required"><br><br>
+
+        <label>Study/Job Satisfaction (1–5):</label>
+        <input type="number" name="satisfaction" min="1" max="5" required="required"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    <!-- Display Prediction -->
+    {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+    {% endif %}
+
+</body>
+</html>
