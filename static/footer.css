@@ -1,0 +1,65 @@
+/* Footer Section Styling */
+footer {
+ 
+    background-color: #222;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+/* Footer Container */
+.footer-container {
+    /* Gold border */
+   
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    /* Center all content */
+    align-items: center;
+    flex-direction: column;
+    /* Stack items vertically */
+}
+
+
+
+/* Social Icons Link Styling */
+.social-icons a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Social Icons Hover Effect */
+.social-icons a:hover {
+    transform: scale(1.1);
+    color: #FFD700;
+    /* Gold color on hover */
+}
+
+/* Social Icon Image Styling */
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    filter: invert(1);
+    padding: 2px;
+
+
+}
+
+/* Social Icon Hover Effect */
+.social-icons a:hover img {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Footer Text Styling */
+.footer-container p {
+    font-size: 15px;
+    color: #ccc;
+    margin: 0;
+    text-align: center;
+    /* Align the text to the center */
+    flex-basis: 100%;
+    /* Ensures the text takes the full width */
+}
